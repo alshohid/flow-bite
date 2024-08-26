@@ -9,7 +9,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="bg-[#FFFFFF] border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div>
           <a
@@ -22,7 +22,7 @@ export default function NavBar() {
               alt="Flowbite Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Flowbite
+              Online Shop
             </span>
           </a>
         </div>
@@ -109,12 +109,12 @@ export default function NavBar() {
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-white bg-blue-700 rounded hover:bg-blue-800 md:bg-blue-700 md:p-0 dark:bg-blue-600 dark:hover:bg-blue-700"
+              <button
+                type="button"
+                className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
               >
                 Get Started
-              </a>
+              </button>
             </li>
           </ul>
         </div>
