@@ -1,19 +1,15 @@
 export default function HeroSection() {
-    return (
-      <div className="w-full font-inter py-4 bg-[#F3F4F6]">
-        <h1
-          className="font-extrabold text-center
-            text-[36px] leading-[36px]
-            md:text-[60px] md:leading-[60px] md:tracking-[-0.01em]"
-        >
+  return (
+    <section className="bg-[#FFFFFF] dark:bg-gray-900">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
           We invest in the world’s potential
         </h1>
-
-        <p className="text-[#9CA3AF] md:text-[18px] md:leading-[30px]  text-center text-[16px] leading-[24px] font-[100px]">
-          Here at flowbite we focus on markets where technology, innovation, and
+        <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">
+          Here at Flowbite we focus on markets where technology, innovation, and
           capital can unlock long-term value and drive economic growth.
         </p>
-        <div className="flex flex-col md:flex-row md:justify-center items-center mt-4 space-y-3 md:space-y-0 md:space-x-3">
+        <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
           <button
             type="button"
             className="w-full md:w-auto text-center text-white bg-[#1A56DB] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center items-center dark:focus:ring-[#3b5998]/55"
@@ -42,5 +38,8 @@ export default function HeroSection() {
           </button>
         </div>
       </div>
-    );
+    </section>
+
+  
+  );
 }
