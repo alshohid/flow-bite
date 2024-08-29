@@ -4,7 +4,11 @@ import Table from "@/ui/Table";
 export default function CoursePlaning() {
   return (
     <div className="w-full">
-      <section className="bg-white dark:bg-gray-900">
+      <section
+        className="bg-white dark:bg-gray-900 wow  animate__fadeInUp"
+        data-wow-duration="2s"
+        data-wow-iteration="1"
+      >
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
           <h1 className="mb-4 md:text-[36px]  font-extrabold tracking-tight leading-none text-gray-900  dark:text-white">
             We invest in the world’s potential
@@ -37,7 +41,7 @@ export default function CoursePlaning() {
           <CoursePlaneCard />
         </div>
         <div>
-            <Table/>
+          <Table />
         </div>
       </section>
     </div>

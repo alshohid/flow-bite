@@ -2,7 +2,12 @@ import Card from "@/ui/Card";
 
 export default function Testimonial() {
   return (
-    <div className="bg-[#FFFFFF] space-y-6 p-4">
+    <div
+      className="bg-[#FFFFFF] space-y-6 p-4  wow  animate__fadeInUp "
+      // data-wow-delay="0.1s"
+      data-wow-duration="2s"
+      data-wow-iteration="1"
+    >
       <div className="flex justify-center ">
         <div>
           <h1 className="md:text-[36px] md:leading-[45px] md:text-center text-start text-[30px] leading-[37px]  text-[#111928]">

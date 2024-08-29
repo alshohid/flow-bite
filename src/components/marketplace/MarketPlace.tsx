@@ -1,8 +1,8 @@
 export default function MarketPlace() {
   return (
-    <div className="w-full bg-[#FFFFFF] space-y-6 p-4">
+    <div className=" w-full bg-[#FFFFFF] space-y-6 p-4">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 ">
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center wow animate__animated animate__slideInLeft">
           <div className="md:p-4">
             <h1 className="text-[#111928] md:text-[36px] md:leading-[45px] md:font-bold text-[30px] leading-[37px] font-bold ">
               Designed for strong teams like yours
@@ -16,8 +16,13 @@ export default function MarketPlace() {
             </button>
           </div>
         </div>
-        <div className="md:col-span-2 grid grid-cols-1  md:grid-cols-2 gap-3 md:p-2">
-          <div className="md:p-2">
+
+        <div className="md:col-span-2 grid grid-cols-1  md:grid-cols-2 gap-3 md:p-2  wow animate__animated animate__slideInRight">
+          <div
+            className="wow  animate__fadeInUp  md:p-2"
+            data-wow-duration="2s"
+            data-wow-iteration="1"
+          >
             <svg
               className="w-6 h-6 text-gray-800 dark:text-white"
               aria-hidden="true"
@@ -40,7 +45,11 @@ export default function MarketPlace() {
               marketing goals every month with our marketing plan.
             </p>
           </div>
-          <div className="md:p-2">
+          <div
+            className="wow  animate__fadeInUp  md:p-2"
+            data-wow-duration="2s"
+            data-wow-iteration="1"
+          >
             <svg
               className="w-6 h-6 text-gray-800 dark:text-white"
               aria-hidden="true"
@@ -63,7 +72,11 @@ export default function MarketPlace() {
               marketing goals every month with our marketing plan.
             </p>
           </div>
-          <div className="md:p-2">
+          <div
+            className="wow  animate__fadeInUp  md:p-2"
+            data-wow-duration="2s"
+            data-wow-iteration="1"
+          >
             <svg
               className="w-6 h-6 text-gray-800 dark:text-white"
               aria-hidden="true"
@@ -86,7 +99,11 @@ export default function MarketPlace() {
               marketing goals every month with our marketing plan.
             </p>
           </div>
-          <div className="md:p-2">
+          <div
+            className="wow  animate__fadeInUp  md:p-2"
+            data-wow-duration="2s"
+            data-wow-iteration="1"
+          >
             <svg
               className="w-6 h-6 text-gray-800 dark:text-white"
               aria-hidden="true"

@@ -2,7 +2,11 @@
 
 export default function Statistics() {
   return (
-    <div className="bg-[#F9FAFB]">
+    <div
+      className="bg-[#F9FAFB] wow  animate__fadeInUp "
+      data-wow-duration="2s"
+      data-wow-iteration="1"
+    >
       <div className="grid grid-cols-1  md:grid-cols-2 gap-3 divide-x">
         <div className="md:p-16 p-8 divide-y">
           <h1 className="text-[#111928] md:text-[36px] md:leading-[45px] text-[30px] leading-[37px] font-bold">

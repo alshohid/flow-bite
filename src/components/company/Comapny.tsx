@@ -2,7 +2,11 @@ import SideBar from "../sidebar/SideBar";
 
 export default function Comapny() {
   return (
-    <div className="w-full bg-[#F9FAFB]">
+    <div
+      className="w-full bg-[#F9FAFB]  wow  animate__fadeInUp "
+      data-wow-duration="2s"
+      data-wow-iteration="1"
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
         <div className="md:p-4 divide-y">
           <div>
