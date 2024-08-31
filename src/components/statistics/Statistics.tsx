@@ -1,14 +1,24 @@
-"use client";
 
+"use client";
+import { useEffect, useState } from "react";
+import anime from "animejs/lib/anime.es.js";
 export default function Statistics() {
+    const [battery, setBattery] = useState({ charged: "0%", cycles: 120 });
+
+    useEffect(() => {
+      anime({
+        targets: battery,
+        charged: "100%",
+        cycles: 130,
+        round: 1,
+        easing: "linear",
+        update: ()=> setBattery({ ...battery }),
+      });
+    }, []);
   return (
-    <div
-      className="bg-[#F9FAFB] wow  animate__fadeInUp "
-      data-wow-duration="2s"
-      data-wow-iteration="1"
-    >
+    <div className="bg-[#F9FAFB]   ">
       <div className="grid grid-cols-1  md:grid-cols-2 gap-3 divide-x">
-        <div className="md:p-16 p-8 divide-y">
+        <div className="md:p-16 p-8 divide-y wow animate__animated animate__slideInLeft">
           <h1 className="text-[#111928] md:text-[36px] md:leading-[45px] text-[30px] leading-[37px] font-bold">
             Stats that matter
           </h1>
@@ -71,9 +81,9 @@ export default function Statistics() {
                   />
                 </svg>
                 <span className="text-[#111928]">
-                  Team size:{" "}
+                  Team size:
                   <span className="font-semibold text-gray-900 dark:text-white">
-                    1 developer
+                    <span> {battery.charged}</span> developer
                   </span>
                 </span>
               </li>
@@ -96,7 +106,7 @@ export default function Statistics() {
                 <span className="text-[#111928]">
                   Premium support:
                   <span className="font-semibold text-gray-900 dark:text-white">
-                    6 months
+                    {battery.cycles} months
                   </span>
                 </span>
               </li>
@@ -127,6 +137,7 @@ export default function Statistics() {
           </div>
         </div>
         <div
+          className="wow animate__animated animate__slideInRight"
           style={{
             backgroundImage: 'url("/card_img.png")',
             backgroundPosition: "center",
