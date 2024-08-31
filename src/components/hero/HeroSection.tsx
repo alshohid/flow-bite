@@ -1,4 +1,4 @@
-import SvgAnimation from "@/ui/SvgAnimation";
+
 
 export default function HeroSection() {
 
