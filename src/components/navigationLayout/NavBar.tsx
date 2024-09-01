@@ -40,7 +40,9 @@ export default function NavBar() {
   return (
     <nav
       className={`bg-[#FFFFFF] border-gray-200 dark:bg-gray-900 ${
-        isSticky ? "fixed top-0 left-0 w-full shadow-md z-50 bg-orange-300 text-black" : ""
+        isSticky
+          ? "fixed top-0 left-0 w-full shadow-md z-50 bg-orange-300 transition duration-300 text-black"
+          : ""
       }`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -91,7 +93,9 @@ export default function NavBar() {
           id="navbar-user"
         >
           <Tabs tabs={tabData} localStorageKey="my-tabs" />
-          <ul className={`flex flex-col items-center font-medium p-4 md:p-0 mt-4   md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 `} >
+          <ul
+            className={`flex flex-col items-center font-medium p-4 md:p-0 mt-4   md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 `}
+          >
             <li className="md:ml-auto">
               <Link
                 href="/login"
