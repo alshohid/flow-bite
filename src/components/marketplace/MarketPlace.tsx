@@ -128,6 +128,7 @@ export default function MarketPlace() {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }

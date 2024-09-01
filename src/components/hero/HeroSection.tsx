@@ -12,16 +12,16 @@ export default function HeroSection() {
           Here at Flowbite we focus on markets where technology, innovation, and
           capital can unlock long-term value and drive economic growth.
         </p>
-        <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+        <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 ">
           <button
             type="button"
-            className="w-full md:w-auto text-center text-white bg-[#1A56DB] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center items-center dark:focus:ring-[#3b5998]/55"
+            className="w-full md:w-auto text-center text-white bg-[#1A56DB] hover:bg-[#3b5998]/90 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center items-center dark:focus:ring-[#3b5998]/55"
           >
             Free trial for 30 days
           </button>
           <button
             type="button"
-            className="w-full md:w-auto text-center text-[#111928] bg-[#FFFFFF] border hover:bg-[#FFFFFF]/90 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center items-center dark:focus:ring-[#3b5998]/55"
+            className="w-full md:w-auto md:ml-2 text-center text-[#111928] bg-[#FFFFFF] border hover:bg-[#FFFFFF]/90 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center items-center dark:focus:ring-[#3b5998]/55"
           >
             Pricing & FAQ
             <svg
