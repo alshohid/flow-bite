@@ -1,8 +1,6 @@
-
 "use client";
 
 import { useEffect, ReactNode } from "react";
-import { WOW } from "wowjs";
 import "animate.css/animate.min.css";
 
 interface WowProviderProps {
@@ -11,7 +9,12 @@ interface WowProviderProps {
 
 export default function WowProvider({ children }: WowProviderProps) {
   useEffect(() => {
-    new WOW().init();
+    if (typeof window !== "undefined") {
+      import("wowjs").then(({ WOW }) => {
+        const wow = new WOW();
+        wow.init();
+      });
+    }
   }, []);
 
   return <>{children}</>;

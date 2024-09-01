@@ -13,7 +13,7 @@ export default function NavBar() {
   };
 
   const handleScroll = () => {
-    if (window.scrollY > 300) {
+    if (window?.scrollY > 300) {
       setIsSticky(true);
     } else {
       setIsSticky(false);
@@ -21,10 +21,12 @@ export default function NavBar() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+  if(window !=undefined || window !=null){
+      window?.addEventListener("scroll", handleScroll);
+      return () => {
+        window?.removeEventListener("scroll", handleScroll);
+      };
+  }
   }, []);
 
   const tabData = [

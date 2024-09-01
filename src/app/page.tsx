@@ -11,13 +11,13 @@ export default function Home() {
   return (
     <main className="lg:space-y-6 w-full">
       <HeroSection />
-      <MarketPlace/>
-      <Comapny/>
-      <Testimonial/>
-      <Statistics/>
-      <CoursePlaning/>
-      <HelpSection/>
-      <Footer/>
+      <MarketPlace />
+      <Comapny />
+      <Testimonial />
+      <Statistics />
+      <CoursePlaning />
+      <HelpSection />
+      <Footer />
     </main>
   );
 }
