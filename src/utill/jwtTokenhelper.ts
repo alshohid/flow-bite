@@ -2,10 +2,10 @@ import { SignJWT, JWTPayload, jwtVerify } from "jose";
 
 interface Payload extends JWTPayload {
     email: string;
-    id: string;
+    id: number;
 }
 
-export async function CreateToken(email: string, id:any): Promise<string> {
+export async function CreateToken(email: string, id:number): Promise<string> {
     const secret = new TextEncoder().encode(process.env.JWT_SECRET);
     const payload: Payload = { email, id };
 

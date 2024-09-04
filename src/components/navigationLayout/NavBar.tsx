@@ -21,12 +21,12 @@ export default function NavBar() {
   };
 
   useEffect(() => {
-  if(window !=undefined || window !=null){
+    if (window != undefined || window != null) {
       window?.addEventListener("scroll", handleScroll);
       return () => {
         window?.removeEventListener("scroll", handleScroll);
       };
-  }
+    }
   }, []);
 
   const tabData = [
@@ -105,12 +105,13 @@ export default function NavBar() {
               </Link>
             </li>
             <li>
-              <button
+              <Link
+                href={"/registration"}
                 type="button"
                 className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:outline-none font-medium rounded-md text-sm px-5 py-2.5 text-center me-2 mb-2"
               >
                 Get Started
-              </button>
+              </Link>
             </li>
           </ul>
         </div>

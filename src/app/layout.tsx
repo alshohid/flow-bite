@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/navigationLayout/NavBar";
 import WowProvider from "@/components/wowProvider/WowProvider";
-
+import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,6 +23,7 @@ export default function RootLayout({
         <WowProvider>
           <NavBar />
           {children}
+          <Toaster position="top-right" reverseOrder={false} />
         </WowProvider>
       </body>
     </html>
