@@ -1,5 +1,6 @@
 "use client";
 import SideBar from "@/components/sidebar/SideBar";
+import TestimonialDataEntryForm from "@/components/testimonial/TestimonialDataEntryForm";
 import React, { useState } from "react";
 
 export default function DashBoard() {
@@ -16,7 +17,7 @@ export default function DashBoard() {
       case "product":
         return <div>Product Content</div>;
       case "testimonial":
-        return <div>Testimonial Content</div>;
+        return <div> <TestimonialDataEntryForm/> </div>;
       default:
         return <div>Select a menu item</div>;
     }
