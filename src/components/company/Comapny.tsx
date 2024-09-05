@@ -98,7 +98,7 @@ export default function Comapny() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
         <div className="w-full flex  ">
-          <SideBar />
+          {/* <SideBar /> */}
         </div>
         <div className="md:p-4 divide-y">
           <div>
